@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Shapes : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnMouseDown()
     {
-        
+        DisplayText("Click");
     }
 
-    // Update is called once per frame
-    void Update()
+    // ABSTRACTION
+    public void DisplayText(string text)
     {
-        
+        print("clicked on shape, printing text: ");
+        print(text);
     }
 }
